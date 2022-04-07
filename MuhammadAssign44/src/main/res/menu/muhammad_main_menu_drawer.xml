@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/muhammad_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/muhammad_download"
+        android:title="Download" />
+
+    <item
+        android:id="@+id/muhammad_weather"
+        android:title="Weather" />
+
+    <item
+        android:id="@+id/muhammad_filecontent"
+        android:title="FileContent" />
+
+    <item
+        android:id="@+id/muhammad_settings"
+        android:title="Settings" />
+
+    <item
+        android:id="@+id/muhammad_shape"
+        android:title="Shape" />
+
+
+</menu>

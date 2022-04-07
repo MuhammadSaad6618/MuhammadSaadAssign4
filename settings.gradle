@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "MuhammadAssign4"
-include ':app'
+include ':MuhammadAssign44'
