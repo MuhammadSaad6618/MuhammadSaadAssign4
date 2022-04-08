@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00FF00"
     tools:context=".FileContentFrag">
 
     <!-- TODO: Update blank fragment layout -->
@@ -13,9 +14,25 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="177dp"
-        android:layout_marginTop="294dp"
-        android:text="File Frag"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="120dp"
+        android:rotation="+45"
+        android:text="Muhammad"
+        android:textStyle="italic|bold"
+        android:textColor="#FF0000"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="96dp"
+        android:rotation="-45"
+        android:textStyle="italic|bold"
+        android:textColor="#0000FF"
+        android:text="Saad"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
