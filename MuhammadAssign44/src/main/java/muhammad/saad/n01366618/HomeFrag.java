@@ -7,6 +7,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +18,12 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class HomeFrag extends Fragment {
+
+    private TextView textView;
+    private Calendar calendar;
+    private SimpleDateFormat dateFormat;
+    private String date;
+    View view;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -55,10 +65,18 @@ public class HomeFrag extends Fragment {
         }
     }
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        view =  inflater.inflate(R.layout.fragment_home, container, false);
+        textView = view.findViewById(R.id.muhammad_textView1);
+        calendar = Calendar.getInstance();
+        dateFormat = new SimpleDateFormat("MM/dd/yyyy");
+        date = dateFormat.format(calendar.getTime());
+        textView.setText(date);
+        return view;
+
     }
 }
