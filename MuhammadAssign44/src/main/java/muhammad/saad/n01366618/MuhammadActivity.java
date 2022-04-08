@@ -37,19 +37,19 @@ public class MuhammadActivity extends AppCompatActivity implements NavigationVie
     }
 
     private void configureToolBar() {
-        this.toolbar = (Toolbar) findViewById(R.id.activity_main_toolbar);
+        this.toolbar = (Toolbar) findViewById(R.id.muhammad_main_toolbar);
         setSupportActionBar(toolbar);
     }
 
     private void configureDrawerLayout() {
-        this.drawerLayout = (DrawerLayout) findViewById(R.id.activity_main_drawer_layout);
+        this.drawerLayout = (DrawerLayout) findViewById(R.id.muhammad_main_drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
     }
 
     private void configureNavigationView() {
-        this.navigationView = (NavigationView) findViewById(R.id.activity_main_nav_view);
+        this.navigationView = (NavigationView) findViewById(R.id.muhammad_main_nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
 
@@ -57,32 +57,32 @@ public class MuhammadActivity extends AppCompatActivity implements NavigationVie
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.muhammad_home:
-                getSupportFragmentManager().beginTransaction().replace(R.id.activity_main_frame_layout, homeFrag).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.muhammad_main_frame_layout, homeFrag).commit();
                 this.drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
 
             case R.id.muhammad_download:
-                getSupportFragmentManager().beginTransaction().replace(R.id.activity_main_frame_layout, downloadFrag).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.muhammad_main_frame_layout, downloadFrag).commit();
                 this.drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
 
             case R.id.muhammad_weather:
-                getSupportFragmentManager().beginTransaction().replace(R.id.activity_main_frame_layout, saSrv).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.muhammad_main_frame_layout, saSrv).commit();
                 this.drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
 
             case R.id.muhammad_filecontent:
-                getSupportFragmentManager().beginTransaction().replace(R.id.activity_main_frame_layout, fileContentFrag).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.muhammad_main_frame_layout, fileContentFrag).commit();
                 this.drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
 
             case R.id.muhammad_settings:
-                getSupportFragmentManager().beginTransaction().replace(R.id.activity_main_frame_layout, settingsFrag).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.muhammad_main_frame_layout, settingsFrag).commit();
                 this.drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
 
             case R.id.muhammad_shape:
-                getSupportFragmentManager().beginTransaction().replace(R.id.activity_main_frame_layout, shapeFrag).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.muhammad_main_frame_layout, shapeFrag).commit();
                 this.drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
 
