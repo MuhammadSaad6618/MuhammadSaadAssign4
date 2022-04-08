@@ -15,7 +15,7 @@
     </style>
 
     <style name="ToolBarStyle" parent="Theme.MuhammadAssign4">
-        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
         <item name="colorControlNormal">@android:color/white</item>
     </style>
 </resources>
