@@ -7,6 +7,12 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +20,9 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class DownloadFrag extends Fragment {
+
+    View view;
+    ListView listView;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -59,6 +68,14 @@ public class DownloadFrag extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_download, container, false);
+        view =  inflater.inflate(R.layout.fragment_download, container, false);
+        listView = view.findViewById(R.id.muhammad_listView);
+        List<String> list = new ArrayList<>();
+        list.add("Pakistan Flag");
+        list.add("Canada Flag");
+        list.add("Australia Flag");
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1,list);
+        listView.setAdapter(arrayAdapter);
+        return view;
     }
 }
