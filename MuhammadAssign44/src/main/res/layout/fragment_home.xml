@@ -12,20 +12,31 @@
 
     <TextView
         android:id="@+id/muhammad_textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="310dp"
+        android:layout_width="279dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="144dp"
         android:text="Date"
+        android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <DigitalClock
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="154dp"
-        android:layout_marginTop="121dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="84dp"
         android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="206dp"
+        android:layout_height="236dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="258dp"
+        android:src="@drawable/sweep_gradient"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
