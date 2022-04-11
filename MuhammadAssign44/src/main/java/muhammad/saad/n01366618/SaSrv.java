@@ -1,4 +1,5 @@
 package muhammad.saad.n01366618;
+// Muhammad Saad , n01366618, Section RNA
 
 import android.os.Bundle;
 
@@ -69,6 +70,24 @@ public class SaSrv extends Fragment {
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(),R.array.cities, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                String a = adapterView.getItemAtPosition(i).toString();
+                if(a == "Karachi") {
+                    Toast.makeText(getContext(),"Karachi",Toast.LENGTH_SHORT).show();
+                }
+
+                else if(a == "Dubai") {
+                    Toast.makeText(getContext(),"Dubai",Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
         return view;
     }
 }
