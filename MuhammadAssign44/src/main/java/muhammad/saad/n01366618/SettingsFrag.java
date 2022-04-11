@@ -1,12 +1,18 @@
 package muhammad.saad.n01366618;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +20,10 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class SettingsFrag extends Fragment {
+    View view;
+    RadioGroup radioGroup;
+    ConstraintLayout constraintLayout;
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -59,6 +69,31 @@ public class SettingsFrag extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.settings_frag, container, false);
+        view = inflater.inflate(R.layout.settings_frag, container, false);
+        radioGroup = view.findViewById(R.id.muhammad_radioGroup);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                RadioButton radioButton1 = (RadioButton) view.findViewById(R.id.muhammad_yellow);
+                RadioButton radioButton2 = (RadioButton) view.findViewById(R.id.muhammad_red);
+                RadioButton radioButton3 = (RadioButton) view.findViewById(R.id.muhammad_violet);
+                //HomeFrag homeFrag = new HomeFrag();
+               // homeFrag.getView().setBackgroundColor(Color.YELLOW);
+                //homeFrag = (HomeFrag) getFragmentManager().findFragmentById(R.id.muhammad_homelayout);
+                if (radioButton1.isChecked()) {
+                    Toast.makeText(getContext(), "yellow", Toast.LENGTH_SHORT).show();
+                  //  homeFrag.getView().setBackgroundColor(Color.YELLOW);
+
+                } else if (radioButton2.isChecked()) {
+                    Toast.makeText(getContext(), "red", Toast.LENGTH_SHORT).show();
+
+                } else if (radioButton3.isChecked()) {
+                    Toast.makeText(getContext(), "violet", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        return view;
     }
+
+
 }

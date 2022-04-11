@@ -38,6 +38,7 @@ public class MuhammadActivity extends AppCompatActivity implements NavigationVie
         this.configureToolBar();
         this.configureDrawerLayout();
         this.configureNavigationView();
+        getSupportFragmentManager().beginTransaction().replace(R.id.muhammad_main_frame_layout, homeFrag).commit();
     }
 
     private void configureToolBar() {
