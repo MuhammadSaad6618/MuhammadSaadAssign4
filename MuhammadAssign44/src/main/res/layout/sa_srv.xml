@@ -12,11 +12,23 @@
 
     <TextView
         android:id="@+id/muhammad_textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="278dp"
+        android:layout_width="246dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="72dp"
         android:text="Saad"
+        android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/muhammad_spinner"
+        android:layout_width="241dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="232dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

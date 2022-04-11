@@ -4,4 +4,11 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="cities">
+        <item>Karachi</item>
+        <item>Dubai</item>
+        <item>New York</item>
+        <item>Paris</item>
+        <item>Madrid</item>
+    </string-array>
 </resources>
