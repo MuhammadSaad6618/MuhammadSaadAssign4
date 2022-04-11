@@ -30,7 +30,7 @@
         android:layout_height="21dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="136dp"
-        android:text="Muhammad Saad"
+        android:text="My Fragments"
         android:textColor="#37474F"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

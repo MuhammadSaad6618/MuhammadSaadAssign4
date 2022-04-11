@@ -2,27 +2,33 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/muhammad_home"
-        android:title="Home" />
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
 
     <item
         android:id="@+id/muhammad_download"
-        android:title="Download" />
+        android:title="Download"
+        android:icon="@drawable/ic_download"/>
 
     <item
         android:id="@+id/muhammad_weather"
-        android:title="Weather" />
+        android:title="Weather"
+        android:icon="@drawable/ic_weather"/>
 
     <item
         android:id="@+id/muhammad_filecontent"
-        android:title="FileContent" />
+        android:title="FileContent"
+        android:icon="@drawable/ic_file"/>
 
     <item
         android:id="@+id/muhammad_settings"
-        android:title="Settings" />
+        android:title="Settings"
+        android:icon="@drawable/ic_settings_tab"/>
 
     <item
         android:id="@+id/muhammad_shape"
-        android:title="Shape" />
+        android:title="Shape"
+        android:icon="@drawable/ic_shape_tab"/>
 
 
 </menu>
