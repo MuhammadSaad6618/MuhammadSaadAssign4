@@ -74,7 +74,7 @@ public class HomeFrag extends Fragment {
         view =  inflater.inflate(R.layout.fragment_home, container, false);
         textView = view.findViewById(R.id.muhammad_textView1);
         calendar = Calendar.getInstance();
-        dateFormat = new SimpleDateFormat("MM/dd/yyyy");
+        dateFormat = new SimpleDateFormat(getString(R.string.date_format));
         date = dateFormat.format(calendar.getTime());
         textView.setText(date);
         return view;

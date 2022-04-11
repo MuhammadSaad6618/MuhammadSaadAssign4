@@ -47,13 +47,6 @@ public class DownloadFrag extends Fragment {
     ProgressBar progressBar;
 
 
-    // Progress dialog type (0 - for Horizontal progress bar)
-    public static final int progress_bar_type = 0;
-
-    // File url to download
-    private static String file_url = "https://api.androidhive.info/progressdialog/hive.jpg";
-
-
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -104,9 +97,9 @@ public class DownloadFrag extends Fragment {
         imageView = view.findViewById(R.id.muhammad_my_image);
         progressBar.setVisibility(view.INVISIBLE);
         List<String> list = new ArrayList<>();
-        list.add("Pakistan Flag");
-        list.add("Canada Flag");
-        list.add("Australia Flag");
+        list.add(getString(R.string.pak_flag));
+        list.add(getString(R.string.canada_flag));
+        list.add(getString(R.string.australia_flag));
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, list);
         listView.setAdapter(arrayAdapter);
@@ -114,17 +107,13 @@ public class DownloadFrag extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String n = list.get(i);
-                if (n == "Pakistan Flag") {
-                    // Toast.makeText(getContext(),"this is it",Toast.LENGTH_SHORT).show();
-                    new Downloader().execute("https://i.pinimg.com/originals/dd/b0/fa/ddb0fa82fd09bd1bbc3654b652836714.png");
+                if (n == getString(R.string.pak_flag)) {
+                    new Downloader().execute(getString(R.string.pakistan_flag_url));
 
-
-                } else if(n == "Canada Flag") {
-                    new Downloader().execute("https://cdn.imgbin.com/25/9/8/imgbin-flag-of-canada-maple-leaf-national-flag-canada-flag-zrp0KhJpzGJEPxR8zDqhTKxH4.jpg");
-                }
-
-                else if(n == "Australia Flag") {
-                    new Downloader().execute("https://cdn3.iconfinder.com/data/icons/world-flags-square-vol-1/48/Australia-512.png");
+                } else if (n == getString(R.string.canada_flag)) {
+                    new Downloader().execute(getString(R.string.canada_flag_url));
+                } else if (n == getString(R.string.australia_flag)) {
+                    new Downloader().execute(getString(R.string.australia_flag_url));
                 }
 
             }
@@ -147,7 +136,7 @@ public class DownloadFrag extends Fragment {
         @Override
         protected Bitmap doInBackground(String... strings) {
             try {
-                Thread.sleep(6000);
+                Thread.sleep(5000);
                 URL url = new URL(strings[0]);
                 httpURLConnection = (HttpURLConnection) url.openConnection();
                 InputStream inputStream = new BufferedInputStream(httpURLConnection.getInputStream());
@@ -168,12 +157,10 @@ public class DownloadFrag extends Fragment {
         @Override
         protected void onPostExecute(Bitmap bitmap) {
             super.onPostExecute(bitmap);
-            if(imageView!= null) {
+            if (imageView != null) {
                 progressBar.setVisibility(View.INVISIBLE);
                 imageView.setImageBitmap(bitmap);
-            }
-
-            else {
+            } else {
                 progressBar.setVisibility(View.VISIBLE);
             }
         }
@@ -183,8 +170,6 @@ public class DownloadFrag extends Fragment {
             super.onProgressUpdate(values);
         }
     }
-
-
 
 
 }

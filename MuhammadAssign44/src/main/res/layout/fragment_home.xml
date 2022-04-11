@@ -19,7 +19,7 @@
         android:layout_height="57dp"
         android:layout_marginStart="72dp"
         android:layout_marginTop="144dp"
-        android:text="Date"
+        android:text="@string/date"
         android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

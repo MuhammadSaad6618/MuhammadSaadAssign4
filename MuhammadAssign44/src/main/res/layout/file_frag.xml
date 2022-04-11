@@ -19,7 +19,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="120dp"
         android:rotation="+45"
-        android:text="Muhammad"
+        android:text="@string/my_firstname"
         android:textStyle="italic|bold"
         android:textColor="#FF0000"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +34,7 @@
         android:rotation="-45"
         android:textStyle="italic|bold"
         android:textColor="#0000FF"
-        android:text="Saad"
+        android:text="@string/my_lastname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -74,12 +74,24 @@ public class SaSrv extends Fragment {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String a = adapterView.getItemAtPosition(i).toString();
-                if(a == "Karachi") {
-                    Toast.makeText(getContext(),"Karachi",Toast.LENGTH_SHORT).show();
+                if(a == getString(R.string.name_karachi)) {
+                    Toast.makeText(getContext(),getString(R.string.name_karachi),Toast.LENGTH_SHORT).show();
                 }
 
-                else if(a == "Dubai") {
-                    Toast.makeText(getContext(),"Dubai",Toast.LENGTH_SHORT).show();
+                else if(a == getString(R.string.name_dubai)) {
+                    Toast.makeText(getContext(),getString(R.string.name_dubai),Toast.LENGTH_SHORT).show();
+                }
+
+                else if(a == getString(R.string.name_paris)) {
+                    Toast.makeText(getContext(),getString(R.string.name_paris),Toast.LENGTH_SHORT).show();
+                }
+
+                else if(a == getString(R.string.name_new_york)) {
+                    Toast.makeText(getContext(),getString(R.string.name_new_york),Toast.LENGTH_SHORT).show();
+                }
+
+                else if(a == getString(R.string.name_madrid)) {
+                    Toast.makeText(getContext(),getString(R.string.name_madrid),Toast.LENGTH_SHORT).show();
                 }
             }
 

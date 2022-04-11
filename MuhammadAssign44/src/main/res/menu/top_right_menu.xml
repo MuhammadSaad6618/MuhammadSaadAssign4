@@ -4,12 +4,12 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/muhammad_help"
-        android:title="Help"
+        android:title="@string/help"
         app:showAsAction="never|withText"/>
 
 
     <item android:id="@+id/muhammad_settings"
         android:icon="@drawable/ic_settings"
-        android:title="Settings"
+        android:title="@string/settings_2"
         app:showAsAction="always"/>
 </menu>

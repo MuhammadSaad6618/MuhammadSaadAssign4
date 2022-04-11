@@ -114,7 +114,7 @@ public class MuhammadActivity extends AppCompatActivity implements NavigationVie
                 startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS ),0);
                 return true;
             case R.id.muhammad_help:
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.wwe.com/"));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.wwe_url)));
                 startActivity(intent);
                 return true;
             default:
@@ -124,13 +124,13 @@ public class MuhammadActivity extends AppCompatActivity implements NavigationVie
 
     @Override
     public void onBackPressed() {
-        new AlertDialog.Builder((this)).setMessage("Muhammad Saad, N01366618 Do you want to exit the app?")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        new AlertDialog.Builder((this)).setMessage(R.string.ask_message)
+                .setPositiveButton(R.string.say_yes, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 finish();
             }
-        }).setNegativeButton("No",null).setIcon(R.drawable.ic_dialog).setTitle("Exit")
+        }).setNegativeButton(R.string.say_no,null).setIcon(R.drawable.ic_dialog).setTitle(R.string.lets_leave)
                 .show();
     }
 }

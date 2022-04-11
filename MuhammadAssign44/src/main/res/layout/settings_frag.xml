@@ -26,18 +26,18 @@
             android:id="@+id/muhammad_yellow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="yellow" />
+            android:text="@string/yellow" />
 
         <RadioButton
             android:id="@+id/muhammad_red"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="red" />
+            android:text="@string/red" />
 
         <RadioButton
             android:id="@+id/muhammad_violet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="violet" />
+            android:text="@string/violet" />
     </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,40 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pak_flag">Pakistan Flag</string>
+    <string name="canada_flag">Canada Flag</string>
+    <string name="australia_flag">Australia Flag</string>
+    <string name="pakistan_flag_url">https://i.pinimg.com/originals/dd/b0/fa/ddb0fa82fd09bd1bbc3654b652836714.png</string>
+    <string name="canada_flag_url">https://cdn.imgbin.com/25/9/8/imgbin-flag-of-canada-maple-leaf-national-flag-canada-flag-zrp0KhJpzGJEPxR8zDqhTKxH4.jpg</string>
+    <string name="australia_flag_url">https://cdn3.iconfinder.com/data/icons/world-flags-square-vol-1/48/Australia-512.png</string>
+    <string name="wwe_url">https://www.wwe.com/</string>
+    <string name="ask_message">Muhammad Saad, N01366618 Do you want to exit the app?</string>
+    <string name="say_yes">Yes</string>
+    <string name="say_no">No</string>
+    <string name="lets_leave">Exit</string>
+    <string name="name_karachi">Karachi</string>
+    <string name="name_dubai">Dubai</string>
+    <string name="name_paris">Paris</string>
+    <string name="name_new_york">New York</string>
+    <string name="name_madrid">Madrid</string>
+    <string name="my_firstname">Muhammad</string>
+    <string name="my_lastname">Saad</string>
+    <string name="date">Date</string>
+    <string name="under_construction">Under Construction</string>
+    <string name="my_fragments">My Fragments</string>
+    <string name="saad">Saad</string>
+    <string name="yellow">yellow</string>
+    <string name="red">red</string>
+    <string name="violet">violet</string>
+    <string name="home">Home</string>
+    <string name="download">Download</string>
+    <string name="weather">Weather</string>
+    <string name="filecontent">FileContent</string>
+    <string name="settings">Settings</string>
+    <string name="shape">Shape</string>
+    <string name="help">Help</string>
+    <string name="settings_2">Settings</string>
+    <string name="date_format">MM/dd/yyyy</string>
     <string-array name="cities">
         <item>Karachi</item>
         <item>Dubai</item>

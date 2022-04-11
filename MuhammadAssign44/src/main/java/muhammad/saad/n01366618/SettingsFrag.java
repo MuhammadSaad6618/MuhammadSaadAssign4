@@ -24,7 +24,9 @@ public class SettingsFrag extends Fragment {
     View view;
     RadioGroup radioGroup;
     ConstraintLayout constraintLayout;
-
+    String yellow = "yellow";
+    String red = "red";
+    String violet = "violet";
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -82,14 +84,14 @@ public class SettingsFrag extends Fragment {
                // homeFrag.getView().setBackgroundColor(Color.YELLOW);
                 //homeFrag = (HomeFrag) getFragmentManager().findFragmentById(R.id.muhammad_homelayout);
                 if (radioButton1.isChecked()) {
-                    Toast.makeText(getContext(), "yellow", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), yellow, Toast.LENGTH_SHORT).show();
                   //  homeFrag.getView().setBackgroundColor(Color.YELLOW);
 
                 } else if (radioButton2.isChecked()) {
-                    Toast.makeText(getContext(), "red", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), red, Toast.LENGTH_SHORT).show();
 
                 } else if (radioButton3.isChecked()) {
-                    Toast.makeText(getContext(), "violet", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), violet, Toast.LENGTH_SHORT).show();
                 }
             }
         });

@@ -13,19 +13,19 @@
 
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/muhammad_textView7"
         android:layout_width="320dp"
         android:layout_height="74dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="76dp"
-        android:text="Under Construction"
+        android:text="@string/under_construction"
         android:textColor="@color/yellow"
         android:textSize="26sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/muhammad_imageView3"
         android:layout_width="324dp"
         android:layout_height="233dp"
         android:layout_marginStart="48dp"
